@@ -1,0 +1,15 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	FAILMSG                 36F3
+//	GOODMSG                 36A3
+//	PASSMSG                 36C6
+//	Q1                      3512
+//	Q1PTS                   3501
+//	Q1STR                   3500
+//	Q2                      357E
+//	Q2PTS                   3506
+//	Q2STR                   3505
+//	Q3                      35EC
+//	Q3PTS                   350B
+//	Q3STR                   350A
+//	RESULTS                 350F

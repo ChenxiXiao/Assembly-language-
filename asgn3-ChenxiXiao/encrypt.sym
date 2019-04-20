@@ -1,0 +1,16 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ADDKEY                  3006
+//	AGAIN                   3028
+//	ASCII                   306D
+//	CLEAR                   3000
+//	DONE                    302D
+//	ENCRY                   3019
+//	ENTER                   306C
+//	INPUTmesg               3046
+//	KEY                     3082
+//	KEYmesg                 302E
+//	PRINT                   3025
+//	READ                    3015
+//	RESmesg                 3057
+//	ZERO                    301C

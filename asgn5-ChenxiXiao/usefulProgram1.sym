@@ -1,0 +1,10 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ENDMSG                  302C
+//	INITMSG                 3014
+//	IRVT                    304C
+//	KBIR                    304D
+//	MAIN                    3005
+//	STACK                   304B
+//	TRAP26                  304A
+//	TRAPVT                  3049

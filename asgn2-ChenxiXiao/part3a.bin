@@ -1,0 +1,26 @@
+;Chenxi Xiao
+;CSC 225 
+
+;R1 is the result - number of 1's
+;R2 is the loaded data from address x 3100
+;R3 is the timekeeper
+;R4 multiplies to enable shifting and checking the 1's
+;R5 stores the data after AND operation
+;R6 
+
+0011 0000 0000 0000    ; Start the program at location 0x3000.
+0101 001 001 1 00000   ; Clear R1, R1 = 0
+0101 010 010 1 00000   ; Clear R2
+0010 010 011111101     ; Load the starting address of data at x3100 to R2 
+0001 011 001 1 01111   ; Set R3 to #15
+0001 100 100 1 00001   ; Add R4 to 1, prepare for multiplying in the loop
+
+0101 101 100 000 010   ; AND R2 R4, then store in R5. res = 1, +1
+0000 010 000000001     ; BRz #1 , if 0, jump to the next next instruction
+0001 001 001 1 00001   ; ADD R1 #1
+0001 100 100 000 100   ; R4 x 2, shift
+0001 011 011 1 11111   ; Decrement R3
+0000 011 111111010     ; BRzp #-6
+
+0011 001 011110101     ; Store R1 in x3101
+1111 0000 00100101     ; Halt.

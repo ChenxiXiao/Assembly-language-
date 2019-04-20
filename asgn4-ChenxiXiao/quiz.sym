@@ -1,0 +1,24 @@
+//Symbol Name		Page Address
+//----------------	------------
+//	ANSWERMSG               3047
+//	CAL                     3032
+//	FIRST                   302D
+//	GETANS                  3024
+//	GETI                    3039
+//	LOAD                    3038
+//	MESG1                   3021
+//	MESG3                   301D
+//	PRINT                   3022
+//	Q1PTS                   3052
+//	Q1STR                   3051
+//	Q2PTS                   3054
+//	Q2STR                   3053
+//	Q3PTS                   3056
+//	Q3STR                   3055
+//	RESULTPROMPT            303D
+//	RESULTS                 3057
+//	SAVER0                  303A
+//	SAVER7                  303B
+//	SECOND                  302F
+//	THIRD                   3031
+//	TP26                    303C

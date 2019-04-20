@@ -1,0 +1,28 @@
+;Chenxi Xiao
+;CSC 225 
+
+;R0 is the data of address at x3100
+;R1 is the multiplier 
+;R2 is the counter 
+;R3 stores the final result
+;R4 is the value after bitmasking
+
+
+
+0011 0000 0000 0000    ; Start the program at location 0x3000.
+0101 010 010 1 00000   ; Clear R2
+0001 010 010 1 01111   ; Set R2 to #15 
+0010 000 011111101     ; Load the data in x3100 to R0
+0101 001 001 1 00000   ; Clear R1
+0001 001 001 1 00001   ; Add R1 to 1, serving as a bitmask
+
+0001 011 011 000 011   ; R3 adds R3 to shift the bits leftwards
+0101 100 000 000 001   ; R0 AND R1 and store in R4, if NP, then the bit is 1; if Z, then the bit is 0
+0000 010 000000001     ; BRz #1 , if 0, jump to the next next instruction
+0001 011 011 1 00001   ; ADD 1 to R3 if its not a zero 
+0001 001 001 000 001   ; R1 x 2, shift the bitmask
+0001 010 010 1 11111   ; Decrement R2
+0000 011 111111001     ; Jump to #-7 if it passes ZP, Stop when R2 is a negative
+
+0011 011 011110100     ; Store R3 in x3101
+1111 0000 00100101     ; Halt.
